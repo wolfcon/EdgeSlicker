@@ -35,7 +35,9 @@
     CGRect frame = self.frame;
     CGFloat originalY = UIScreen.mainScreen.bounds.size.height - self.frame.size.height;
     
-    if (scrollView.contentOffset.y < 0) {
+    // 当滑动到顶端时强制显示
+    if (scrollView.contentOffset.y < 30) {
+        [self respondingScrollViewDidScrollToTop];
         return;
     }
     
