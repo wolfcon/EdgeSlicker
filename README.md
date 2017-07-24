@@ -15,7 +15,8 @@ Hide tab bar or other similar view on edge
 
 ```objective-c
 if ([scrollView isEqual:<#your scroll view responding#>]) {
-    [<#your Tabbar? or other view#> viewDidRespondAutoHideWhenScrollView:scrollView beginDraggingContentOffset:self.currentScrollOffset];
+    [<#your Tabbar? or other view#> viewDidRespondAutoHideWhenScrollView:scrollView 
+            beginDraggingContentOffset:self.currentScrollOffset];
 }
 ```
 
