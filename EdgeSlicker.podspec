@@ -1,11 +1,12 @@
 Pod::Spec.new do |s|
 
   s.name         = "EdgeSlicker"
-  s.version      = "1.0.3"
+  s.version      = "1.0.2"
   s.summary      = "Hide tab bar or other similar view on edge"
   s.description  = <<-DESC
                    Hide tab bar or other similar view on edge
-                   DESC, usage is in https://github.com/wolfcon/EdgeSlicker
+                   , usage is in https://github.com/wolfcon/EdgeSlicker
+                   DESC
 
   s.homepage     = "https://github.com/wolfcon/EdgeSlicker"
 
