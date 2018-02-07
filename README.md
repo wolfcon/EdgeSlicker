@@ -1,6 +1,10 @@
 # EdgeSlicker
 Hide tab bar or other similar view on edge
 
+## Todo
+1. refactor (less injection)
+2. repair the jumping when drag up and down
+
 ## Usage
 
 #### Define a var that used to mark the position for slicker.
