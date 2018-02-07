@@ -40,6 +40,11 @@
         [self respondingScrollViewDidScrollToTop];
         return;
     }
+    // 当滑动到低端开始bounce回弹阶段时不响应
+    BOOL isVerticalBouncing = scrollView.contentOffset.y > (scrollView.contentSize.height - scrollView.frame.size.height);
+    if (isVerticalBouncing) {
+        return;
+    }
     
     //下拉隐藏
     if (distance > 0) {
